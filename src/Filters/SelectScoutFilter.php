@@ -4,9 +4,8 @@ namespace StikNoltz\FilamentScoutTable\Filters;
 
 use Closure;
 use Filament\Forms\Components\Select;
-use Laravel\Scout\Builder;
-use Filament\Tables\Filters\Filter;
 use Filament\Tables\Filters\Concerns;
+use Laravel\Scout\Builder;
 
 class SelectScoutFilter extends ScoutFilter
 {

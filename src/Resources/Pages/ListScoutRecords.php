@@ -7,11 +7,10 @@ use Filament\Pages\Actions\ButtonAction;
 use Filament\Resources\Pages\Page;
 use Filament\Resources\Table;
 use Filament\Tables;
-use Laravel\Scout\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
-use Filament\Resources\Pages\ListRecords;
+use Laravel\Scout\Builder;
 use StikNoltz\FilamentScoutTable\Concerns\InteractsWithScoutTable;
 
 class ListScoutRecords extends Page implements Tables\Contracts\HasTable

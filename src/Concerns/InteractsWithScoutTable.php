@@ -2,18 +2,17 @@
 
 namespace StikNoltz\FilamentScoutTable\Concerns;
 
-use Filament\Forms;
-use Filament\Tables\Table;
-use Laravel\Scout\Builder;
+use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Tables\Concerns\HasActions;
 use Filament\Tables\Concerns\HasBulkActions;
 use Filament\Tables\Concerns\HasColumns;
 use Filament\Tables\Concerns\HasContentFooter;
 use Filament\Tables\Concerns\HasEmptyState;
 use Filament\Tables\Concerns\HasHeader;
-use Filament\Tables\Concerns\HasRecordUrl;
 use Filament\Tables\Concerns\HasRecordAction;
-use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Tables\Concerns\HasRecordUrl;
+use Filament\Tables\Table;
+use Laravel\Scout\Builder;
 
 /**
  * @method Builder getTableQuery()

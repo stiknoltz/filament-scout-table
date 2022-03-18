@@ -2,16 +2,16 @@
 
 namespace StikNoltz\FilamentScoutTable\Filters;
 
-use Illuminate\Support\Traits\Conditionable;
-use Illuminate\Support\Traits\Macroable;
-use Illuminate\Support\Traits\Tappable;
 use Filament\Tables\Filters\Concerns\BelongsToTable;
-use Filament\Tables\Filters\Concerns\HasDefaultState;
 use Filament\Tables\Filters\Concerns\CanBeHidden;
 use Filament\Tables\Filters\Concerns\EvaluatesClosures;
+use Filament\Tables\Filters\Concerns\HasDefaultState;
 use Filament\Tables\Filters\Concerns\HasFormSchema;
 use Filament\Tables\Filters\Concerns\HasLabel;
 use Filament\Tables\Filters\Concerns\HasName;
+use Illuminate\Support\Traits\Conditionable;
+use Illuminate\Support\Traits\Macroable;
+use Illuminate\Support\Traits\Tappable;
 
 class ScoutFilter
 {
