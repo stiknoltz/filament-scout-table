@@ -13,16 +13,11 @@ trait HasScoutRecords
 
     protected function getFilteredTableQuery(): Builder
     {
-        $query = $this->getTableQuery();
+        $searchQuery = $this->getTableSearchQuery();
+
+        $query = $this->getTableQuery($searchQuery);
 
         $this->applyFiltersToTableQuery($query);
-
-        $this->applySearchToTableQuery($query);
-
-//        foreach ($this->getCachedTableColumns() as $column) {
-//            $column->applyEagerLoading($query);
-//            $column->applyRelationshipCount($query);
-//        }
 
         return $query;
     }
