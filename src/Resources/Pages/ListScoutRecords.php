@@ -230,9 +230,9 @@ class ListScoutRecords extends Page implements Tables\Contracts\HasTable
         };
     }
 
-    protected function getTableQuery(): Builder
+    protected function getTableQuery($searchQuery = NULL): Builder
     {
-        return static::getModel()::search();
+        return static::getModel()::search($searchQuery);
     }
 
     protected function getMountedActionFormModel(): string
