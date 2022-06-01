@@ -5,8 +5,8 @@ namespace StikNoltz\FilamentScoutTable\Concerns;
 use Filament\Forms;
 use Filament\Forms\ComponentContainer;
 use Filament\Tables\Filters\Filter;
-use StikNoltz\FilamentScoutTable\Filters\ScoutFilter;
 use Laravel\Scout\Builder;
+use StikNoltz\FilamentScoutTable\Filters\ScoutFilter;
 
 /**
  * @property ComponentContainer $tableFiltersForm

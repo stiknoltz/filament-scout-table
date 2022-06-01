@@ -3,9 +3,9 @@
 namespace StikNoltz\FilamentScoutTable\Concerns;
 
 use Illuminate\Contracts\Pagination\Paginator;
-use Laravel\Scout\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
+use Laravel\Scout\Builder;
 
 trait HasScoutRecords
 {

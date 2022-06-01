@@ -3,8 +3,8 @@
 namespace StikNoltz\FilamentScoutTable\Concerns;
 
 use Illuminate\Contracts\Pagination\Paginator;
-use Laravel\Scout\Builder;
 use Illuminate\Pagination\LengthAwarePaginator;
+use Laravel\Scout\Builder;
 use Livewire\WithPagination;
 
 trait CanPaginateScoutRecords
