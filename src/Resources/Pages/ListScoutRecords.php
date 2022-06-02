@@ -230,7 +230,7 @@ class ListScoutRecords extends Page implements Tables\Contracts\HasTable
         };
     }
 
-    protected function getTableQuery($searchQuery = NULL): Builder
+    protected function getTableQuery($searchQuery = null): Builder
     {
         return static::getModel()::search($searchQuery);
     }
