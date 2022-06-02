@@ -4,28 +4,24 @@ namespace StikNoltz\FilamentScoutTable\Filters;
 
 use Filament\Tables\Filters\Concerns\BelongsToTable;
 use Filament\Tables\Filters\Concerns\CanBeHidden;
-use Filament\Tables\Filters\Concerns\EvaluatesClosures;
 use Filament\Tables\Filters\Concerns\HasDefaultState;
 use Filament\Tables\Filters\Concerns\HasFormSchema;
 use Filament\Tables\Filters\Concerns\HasLabel;
 use Filament\Tables\Filters\Concerns\HasName;
 use Illuminate\Support\Traits\Conditionable;
-use Illuminate\Support\Traits\Macroable;
-use Illuminate\Support\Traits\Tappable;
 
 class ScoutFilter
 {
     use BelongsToTable;
     use HasDefaultState;
     use CanBeHidden;
-    use EvaluatesClosures;
     use HasFormSchema;
     use HasLabel;
     use HasName;
     use Concerns\InteractsWithScoutQuery;
     use Conditionable;
-    use Macroable;
-    use Tappable;
+
+    protected string $evaluationIdentifier = 'filter';
 
     final public function __construct(string $name)
     {
@@ -40,7 +36,10 @@ class ScoutFilter
         return $static;
     }
 
-    protected function setUp(): void
+    protected function getDefaultEvaluationParameters(): array
     {
+        return array_merge(parent::getDefaultEvaluationParameters(), [
+            'livewire' => $this->getLivewire(),
+        ]);
     }
 }
