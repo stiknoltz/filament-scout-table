@@ -6,7 +6,7 @@ use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Tables\Concerns\HasActions;
 use Filament\Tables\Concerns\HasBulkActions;
 use Filament\Tables\Concerns\HasColumns;
-use Filament\Tables\Concerns\HasContentFooter;
+use Filament\Tables\Concerns\HasContent;
 use Filament\Tables\Concerns\HasEmptyState;
 use Filament\Tables\Concerns\HasHeader;
 use Filament\Tables\Concerns\HasRecordAction;
@@ -26,7 +26,7 @@ trait InteractsWithScoutTable
     use HasActions;
     use HasBulkActions;
     use HasColumns;
-    use HasContentFooter;
+    use HasContent;
     use HasEmptyState;
     use HasScoutFilters;
     use HasHeader;
