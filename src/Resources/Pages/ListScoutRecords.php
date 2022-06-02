@@ -3,6 +3,7 @@
 namespace StikNoltz\FilamentScoutTable\Resources\Pages;
 
 use Closure;
+use Filament\Forms\ComponentContainer;
 use Filament\Pages\Actions\ButtonAction;
 use Filament\Resources\Pages\Page;
 use Filament\Resources\Table;
@@ -238,5 +239,30 @@ class ListScoutRecords extends Page implements Tables\Contracts\HasTable
     protected function getMountedActionFormModel(): string
     {
         return static::getModel();
+    }
+
+    public function getActiveTableLocale(): ?string
+    {
+        // TODO: Implement getActiveTableLocale() method.
+    }
+
+    public function hasToggleableTableColumns(): bool
+    {
+        // TODO: Implement hasToggleableTableColumns() method.
+    }
+
+    public function isTableColumnToggledHidden(string $name): bool
+    {
+        // TODO: Implement isTableColumnToggledHidden() method.
+    }
+
+    public function getTableColumnToggleForm(): ComponentContainer
+    {
+        // TODO: Implement getTableColumnToggleForm() method.
+    }
+
+    public function getTableRecordKey(Model $record): string
+    {
+        // TODO: Implement getTableRecordKey() method.
     }
 }
