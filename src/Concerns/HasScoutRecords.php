@@ -43,4 +43,9 @@ trait HasScoutRecords
     {
         return $this->getTableQuery()->get()->find($key);
     }
+
+    public function getTableRecordKey(Model $record): string
+    {
+        return $record->getKey();
+    }
 }

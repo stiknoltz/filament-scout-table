@@ -8,6 +8,7 @@ use Filament\Tables\Concerns\HasBulkActions;
 use Filament\Tables\Concerns\HasColumns;
 use Filament\Tables\Concerns\HasContent;
 use Filament\Tables\Concerns\HasEmptyState;
+use Filament\Tables\Concerns\CanToggleColumns;
 use Filament\Tables\Concerns\HasHeader;
 use Filament\Tables\Concerns\HasRecordAction;
 use Filament\Tables\Concerns\HasRecordUrl;
@@ -23,6 +24,7 @@ trait InteractsWithScoutTable
     use CanSearchScoutRecords;
     use CanSelectScoutRecords;
     use CanSortScoutRecords;
+    use CanToggleColumns;
     use HasActions;
     use HasBulkActions;
     use HasColumns;

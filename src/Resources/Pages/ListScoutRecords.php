@@ -243,26 +243,6 @@ class ListScoutRecords extends Page implements Tables\Contracts\HasTable
 
     public function getActiveTableLocale(): ?string
     {
-        // TODO: Implement getActiveTableLocale() method.
-    }
-
-    public function hasToggleableTableColumns(): bool
-    {
-        // TODO: Implement hasToggleableTableColumns() method.
-    }
-
-    public function isTableColumnToggledHidden(string $name): bool
-    {
-        // TODO: Implement isTableColumnToggledHidden() method.
-    }
-
-    public function getTableColumnToggleForm(): ComponentContainer
-    {
-        // TODO: Implement getTableColumnToggleForm() method.
-    }
-
-    public function getTableRecordKey(Model $record): string
-    {
-        // TODO: Implement getTableRecordKey() method.
+        return null;
     }
 }
