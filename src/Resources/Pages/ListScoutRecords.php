@@ -3,7 +3,6 @@
 namespace StikNoltz\FilamentScoutTable\Resources\Pages;
 
 use Closure;
-use Filament\Forms\ComponentContainer;
 use Filament\Pages\Actions\ButtonAction;
 use Filament\Resources\Pages\Page;
 use Filament\Resources\Table;

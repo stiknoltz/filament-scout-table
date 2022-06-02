@@ -3,12 +3,12 @@
 namespace StikNoltz\FilamentScoutTable\Concerns;
 
 use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Tables\Concerns\CanToggleColumns;
 use Filament\Tables\Concerns\HasActions;
 use Filament\Tables\Concerns\HasBulkActions;
 use Filament\Tables\Concerns\HasColumns;
 use Filament\Tables\Concerns\HasContent;
 use Filament\Tables\Concerns\HasEmptyState;
-use Filament\Tables\Concerns\CanToggleColumns;
 use Filament\Tables\Concerns\HasHeader;
 use Filament\Tables\Concerns\HasRecordAction;
 use Filament\Tables\Concerns\HasRecordUrl;
