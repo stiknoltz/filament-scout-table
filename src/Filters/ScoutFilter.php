@@ -2,6 +2,7 @@
 
 namespace StikNoltz\FilamentScoutTable\Filters;
 
+use Filament\Support\Components\Component;
 use Filament\Tables\Filters\Concerns\BelongsToTable;
 use Filament\Tables\Filters\Concerns\CanBeHidden;
 use Filament\Tables\Filters\Concerns\HasDefaultState;
@@ -10,7 +11,7 @@ use Filament\Tables\Filters\Concerns\HasLabel;
 use Filament\Tables\Filters\Concerns\HasName;
 use Illuminate\Support\Traits\Conditionable;
 
-class ScoutFilter
+class ScoutFilter extends Component
 {
     use BelongsToTable;
     use HasDefaultState;
