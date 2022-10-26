@@ -3,6 +3,7 @@
 namespace StikNoltz\FilamentScoutTable\Concerns;
 
 use Filament\Forms\Concerns\InteractsWithForms;
+use Filament\Tables\Concerns\CanReorderRecords;
 use Filament\Tables\Concerns\CanToggleColumns;
 use Filament\Tables\Concerns\HasActions;
 use Filament\Tables\Concerns\HasBulkActions;
@@ -24,6 +25,7 @@ trait InteractsWithScoutTable
     use CanSearchScoutRecords;
     use CanSelectScoutRecords;
     use CanSortScoutRecords;
+    use CanReorderRecords;
     use CanToggleColumns;
     use HasActions;
     use HasBulkActions;

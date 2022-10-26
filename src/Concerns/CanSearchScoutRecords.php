@@ -6,12 +6,27 @@ use Laravel\Scout\Builder;
 
 trait CanSearchScoutRecords
 {
+    public $tableColumnSearchQueries = [];
+
     public $tableSearchQuery = '';
 
     public function isTableSearchable(): bool
     {
         foreach ($this->getCachedTableColumns() as $column) {
             if (! $column->isSearchable()) {
+                continue;
+            }
+
+            return true;
+        }
+
+        return false;
+    }
+
+    public function isTableSearchableByColumn(): bool
+    {
+        foreach ($this->getCachedTableColumns() as $column) {
+            if (! $column->isIndividuallySearchable()) {
                 continue;
             }
 
